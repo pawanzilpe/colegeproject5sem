@@ -1,0 +1,218 @@
+/* ====== Container ====== */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ====== Controls ====== */
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dashboard-controls input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.dashboard-controls button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #2e86de;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard-controls button:hover {
+  background-color: #1b4f72;
+}
+
+/* ====== Table ====== */
+.college-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.college-table th, .college-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.college-table th {
+  background-color: #2e86de;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.college-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.action-buttons button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.action-buttons .delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.action-buttons .delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.action-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* ====== Pagination ====== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #2e86de;
+  color: #fff;
+  border-color: #2e86de;
+}
+
+/* ====== Toast ====== */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.toast button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ====== Modal ====== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2e86de;
+  text-align: center;
+}
+
+.modal-content form input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-buttons button[type="submit"] {
+  background-color: #2e86de;
+  color: #fff;
+}
+
+.modal-buttons button[type="submit"]:hover {
+  background-color: #1b4f72;
+}
+
+.modal-buttons button[type="button"] {
+  background-color: #ccc;
+}
+
+.modal-buttons button[type="button"]:hover {
+  background-color: #999;
+}
+
+.modal-content img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+  max-width: 100%;
+}
